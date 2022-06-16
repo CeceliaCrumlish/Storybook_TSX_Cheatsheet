@@ -14,17 +14,17 @@ module.exports = {
     core: {
       builder: 'webpack4',
     },
-    typescript: {
-      check: false,
-      checkOptions: {
-        tsConfig: '../'
-      },
-      reactDocgen: 'react-docgen-typescript',
-      reactDocgenTypescriptOptions: {
-        shouldExtractLiteralValuesFromEnum: true,
-        propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
-      },
-    },
+    // typescript: {
+    //   check: false,
+    //   checkOptions: {
+    //     tsConfig: '../'
+    //   },
+    //   reactDocgen: 'react-docgen-typescript',
+    //   reactDocgenTypescriptOptions: {
+    //     shouldExtractLiteralValuesFromEnum: true,
+    //     propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    //   },
+    // },
   
   };
   
