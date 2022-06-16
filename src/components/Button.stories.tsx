@@ -1,5 +1,5 @@
 // Button.stories.js|jsx
-//TODO GET TO WORK IN STORYBOOK 
+//TODO GET TO WORK IN STORYBOOK
 import { ComponentStory } from '@storybook/react';
 import { Button } from './Button';
 
