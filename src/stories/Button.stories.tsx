@@ -15,12 +15,26 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-//👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+//template is a wrapper around button that passes props, and allows you to set 
+// lets you pass args as props to view different states
+const Template: ComponentStory<typeof Button> = (args) => <Button children= "hello" {...args} />;
 
 //'none' | 'square-rounded' | 'rounded' | 'circular'
 //👇 Each story then reuses that template
 export const None = Template.bind({});
 None.args = {
-  roundedness: 'none'
+  roundedness: 'none',
+  color: 'primary'
+};
+
+export const Square = Template.bind({});
+Square.args = {
+  roundedness:"square-rounded",
+  color: 'primary'
+};
+
+export const Circle = Template.bind({});
+Circle.args = {
+  roundedness:'circular',
+  color:'secondary',
 };

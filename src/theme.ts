@@ -1,10 +1,38 @@
+// import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
 import { createTheme } from '@mui/material/styles';
+import React from 'react'; 
 
-export const customTheme = createTheme({
+export const Theme = createTheme({
   palette: {
-      primary: {
-          main: "#ffff", 
-          light: "#colors", 
-      }
+    primary: {
+      main: '#F89365',
+      dark: '#a8bac4',
+      contrastText: 'rgba(253,253,253,0.87)',
+    },
+    secondary: {
+      main: '#f7cebb',
+      contrastText: '#F89365',
+      light: '#ffffff',
+      dark: '#F89365',
+    },
+    background: {
+      default: '#f5f5f5',
+    },
+    // sucess: {
+    //   main: '#72D456',
+    //   dark: '#8EE4DA',
+    // },
+    text: {
+      secondary: '#7E7E7E',
+    },
+    error: {
+      main: '#fb4d00',
+    },
+    warning: {
+      main: '#ff0000',
+    },
+  },
+  typography: {
+    fontFamily: '"Poppins"',
   },
 });
