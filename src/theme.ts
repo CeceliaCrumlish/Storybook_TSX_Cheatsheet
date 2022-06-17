@@ -18,10 +18,10 @@ export const Theme = createTheme({
     background: {
       default: '#f5f5f5',
     },
-    // sucess: {
-    //   main: '#72D456',
-    //   dark: '#8EE4DA',
-    // },
+    success: {
+      main: '#72D456',
+      dark: '#8EE4DA',
+    },
     text: {
       secondary: '#7E7E7E',
     },
@@ -36,3 +36,5 @@ export const Theme = createTheme({
     fontFamily: '"Poppins"',
   },
 });
+
+// .storybook/YourTheme.js
