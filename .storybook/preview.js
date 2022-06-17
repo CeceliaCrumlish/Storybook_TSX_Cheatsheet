@@ -1,5 +1,5 @@
 import React from 'react';
-import { Theme } from '/src/theme'; // whereever you have defined your material ui theme
+import { Theme } from '../src/Theme'; // whereever you have defined your material ui theme
 import { ThemeProvider } from '@mui/material/styles'
 //👇 Configures Storybook to log the actions( onArchiveTask and onPinTask ) in the UI.
 // export const parameters = {
