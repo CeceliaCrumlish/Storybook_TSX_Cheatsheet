@@ -31,7 +31,7 @@ export const OurTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Poppins"',
+    fontFamily: 'Helvetica',
   },
 });
 
