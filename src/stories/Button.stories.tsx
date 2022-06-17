@@ -17,14 +17,19 @@ export default {
 
 //template is a wrapper around button that passes props, and allows you to set 
 // lets you pass args as props to view different states
-const Template: ComponentStory<typeof Button> = (args) => <Button children= "hello" {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button 
+    children= "hello" variant="contained" // default props
+    {...args} 
+  />
+)
 
 //'none' | 'square-rounded' | 'rounded' | 'circular'
 //👇 Each story then reuses that template
 export const None = Template.bind({});
 None.args = {
   roundedness: 'none',
-  color: 'primary', 
+  color: 'primary',
 };
 
 export const Square = Template.bind({});
