@@ -7,7 +7,7 @@ import React from 'react';
 import { Box } from '@mui/material'
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './Button';
+import { Button } from '../components/Button';
 
 //exporting the default propt name for aesthetic testing and pages
 export default {
