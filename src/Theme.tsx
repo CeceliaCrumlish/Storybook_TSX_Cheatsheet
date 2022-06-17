@@ -1,8 +1,7 @@
 // import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
 import { createTheme } from '@mui/material/styles';
-import React from 'react'; 
 
-export const Theme = createTheme({
+export const OurTheme = createTheme({
   palette: {
     primary: {
       main: '#F89365',
