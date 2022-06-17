@@ -24,7 +24,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button children= "hel
 export const None = Template.bind({});
 None.args = {
   roundedness: 'none',
-  color: 'primary'
+  color: 'primary', 
 };
 
 export const Square = Template.bind({});

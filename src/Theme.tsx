@@ -1,8 +1,7 @@
 // import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
 import { createTheme } from '@mui/material/styles';
-import React from 'react'; 
 
-export const Theme = createTheme({
+export const OurTheme = createTheme({
   palette: {
     primary: {
       main: '#F89365',
@@ -18,10 +17,10 @@ export const Theme = createTheme({
     background: {
       default: '#f5f5f5',
     },
-    // sucess: {
-    //   main: '#72D456',
-    //   dark: '#8EE4DA',
-    // },
+    success: {
+      main: '#72D456',
+      dark: '#8EE4DA',
+    },
     text: {
       secondary: '#7E7E7E',
     },
@@ -36,3 +35,5 @@ export const Theme = createTheme({
     fontFamily: '"Poppins"',
   },
 });
+
+// .storybook/YourTheme.js

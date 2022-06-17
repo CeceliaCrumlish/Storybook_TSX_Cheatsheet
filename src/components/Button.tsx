@@ -16,7 +16,7 @@ export const Button = ({ roundedness='square-rounded', children, sx, ...props } 
       borderRadius: borderRadiusForRoundedness[roundedness],
       ...sx, // pass through all the styles that someone might provide when using <Button>
     }}>
-      {children}
+      {children} 
     </MuiButton> 
   )
 }
