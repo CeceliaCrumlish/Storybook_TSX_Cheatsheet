@@ -30,7 +30,7 @@ export const ImgTxt = ({title, subtitle, children , ...props } : ImgTxtProps) =>
 
 ImgTxt.defaultProps = {
     title: 'edit me', 
-    subtitle: 'im text',
+    subtitle: 'help',
 }; 
   
 

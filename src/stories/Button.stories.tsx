@@ -4,7 +4,6 @@
 
 import React from 'react';
 
-import { Box } from '@mui/material'
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Button } from '../components/Button';

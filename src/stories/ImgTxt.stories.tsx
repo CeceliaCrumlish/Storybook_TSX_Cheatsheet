@@ -8,9 +8,10 @@ export default {
     component: ImgTxt, 
 } as ComponentMeta <typeof ImgTxt>; 
 
-const Template: ComponentStory<typeof ImgTxt> = (args) => (
-    <ImgTxt>(args...)</ImgTxt>
-)
+// const Template: ComponentStory<typeof ImgTxt> = (args) => (
+//     <ImgTxt>args</ImgTxt>
+// )
+const Template: ComponentStory<typeof ImgTxt> = (args) => <ImgTxt {...args} />;
 
 export const Basic = Template.bind({}); 
 Basic.args = {
