@@ -1,11 +1,11 @@
 import * as React from 'react';
+
 import TextField from '@mui/material/TextField'
 import { IconProps, styled, SvgIcon, SvgIconTypeMap, withStyles } from '@mui/material';
 import {FilledTextFieldProps } from '@mui/material/TextField'
 import InputAdornment from '@mui/material/InputAdornment';
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import FormControl from '@mui/material/FormControl';
-import LockOutlinedIcon from "@mui/icons-material"
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 
@@ -14,7 +14,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 /*Interface */
 export interface TxtFieldProps extends FilledTextFieldProps {
     field?: string, 
-    icon?: React.ComponentType, // NEEDSWORK
+    icon?: React.ReactNode, 
 }
 
 /*ICON STILL NOT WORKING IDK WHAT TO DOOOOOOOOOOOO :((((((*/
@@ -24,7 +24,7 @@ export interface TxtFieldProps extends FilledTextFieldProps {
 export const TxtField = ({field, icon,  sx, ...props}: TxtFieldProps ) =>{
     return(
         <> 
-                   <FormControl variant= "standard">
+                   <FormControl>
                    <TextField
                      sx = {{ 
                         borderRadius: "50%"
@@ -34,11 +34,11 @@ export const TxtField = ({field, icon,  sx, ...props}: TxtFieldProps ) =>{
                     placeholder= {field}
                     label= {field}
                     type = {field}
-                    variant = "filled"
+                    variant = "outlined"
                     InputProps={{
                         startAdornment: (
                             <InputAdornment position="start">
-                                <AccountCircle/>
+                                {icon}
                             </InputAdornment>
                         )
                         
@@ -52,6 +52,6 @@ export const TxtField = ({field, icon,  sx, ...props}: TxtFieldProps ) =>{
 
 TxtField.defaultProps = {
     field: "name", 
-    icon: LockOutlinedIcon,
+    icon: <EmailOutlinedIcon/>, 
 }
 

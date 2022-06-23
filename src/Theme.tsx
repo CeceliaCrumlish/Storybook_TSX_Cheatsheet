@@ -21,7 +21,8 @@ export const OurTheme = createTheme({
       dark: '#8EE4DA',
     },
     text: {
-      secondary: '#7E7E7E',
+      primary: '#1D1617',
+      secondary: '#ADA4A5',
     },
     error: {
       main: '#fb4d00',
@@ -33,6 +34,7 @@ export const OurTheme = createTheme({
   typography: {
     fontFamily: 'Helvetica',
   },
+
 });
 
 // .storybook/YourTheme.js

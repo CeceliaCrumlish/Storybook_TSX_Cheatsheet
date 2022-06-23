@@ -4,9 +4,9 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { TxtField } from '../components/TxtField';
-import  AccountCircle from '@mui/icons-material';
-import LockOutlinedIcon from "@mui/icons-material"
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LockIcon from '@mui/icons-material/Lock';
 
 
 //exporting the default propt name for aesthetic testing and pages
@@ -26,18 +26,17 @@ const Template: ComponentStory<typeof TxtField> = (args) => (
 export const Password = Template.bind({});
 Password.args = {
     field: "password",
-    Icon: LockOutlinedIcon, 
+    icon: <LockIcon/>
 }
 
 export const Name = Template.bind({}); 
 Name.args = {
     field: "name",
-    Icon: AccountCircle,
+    icon: <AccountCircle/>,
 }
 
 export const ChangeImg = Template.bind({}); 
 ChangeImg.args = {
     field: "email", 
-    Icon: EmailOutlinedIcon,
-    color: 'primary',
+    icon: <EmailOutlinedIcon/>,
 }
