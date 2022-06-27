@@ -16,7 +16,7 @@ export interface CheckboxProps extends MuiCheckboxProps {
     state: State, 
 }
 
-type State = "CHECKED"|"UNCHECKED"; 
+type State = "CHECKED"|"UNCHECKED"|"PLAIN"; 
 
 
 /*Question here is there an easier way to conditionally render something with paper? 
@@ -34,20 +34,10 @@ export const Checkbox = ({ state = "UNCHECKED", boxSize = 200, withBorder = fals
         <Box sx={{padding: '16px'}}>
             { withBorder ? 
             <Box> 
-            <Paper 
-            elevation ={10}
-            sx={{
-                width: {boxSize}
-            }}
-            style={{
-                borderRadius: '15px'
-            }}>
-
             <Paper  
             sx={{ 
-                padding: '16px',
                 width: {boxSize}, 
-                height: '100%'
+                variant: "outlined",
             }} 
             style={{
                 borderColor: "#F89365", 
@@ -63,7 +53,6 @@ export const Checkbox = ({ state = "UNCHECKED", boxSize = 200, withBorder = fals
                 }
             label={<Typography color="text.primary">{yourLabel}</Typography>}
              />
-            </Paper>
             </Paper>
             </Box>
             : 
@@ -82,15 +71,6 @@ export const Checkbox = ({ state = "UNCHECKED", boxSize = 200, withBorder = fals
         <Box sx={{padding: '16px'}}>
             { withBorder ? 
             <Box> 
-            <Paper 
-            elevation ={10}
-            sx={{
-                width: {boxSize}
-            }}
-            style={{
-                borderRadius: '15px'
-            }}>
-
             <Paper 
             variant= "outlined"
             sx={{ 
@@ -114,7 +94,6 @@ export const Checkbox = ({ state = "UNCHECKED", boxSize = 200, withBorder = fals
                 }
             label={<Typography color="text.primary">{yourLabel}</Typography>}
              />
-            </Paper>
             </Paper>
             </Box>
             : 

@@ -43,25 +43,12 @@ export const ImgTxt = ({title, subtitle, img } : ImgTxtProps) => {
 
             </Grid>
             <Grid item xs={1}>
-            <Typography 
-            variant="h6" 
-            align="center" 
-            style={{flex: 1}}
-            maxWidth={300}
-            >
-        {title}        
-            </Typography>
-            </Grid>
-            <Grid item xs={1} >
-            <Typography 
-            align="center" 
-            style={{flex: 1}} 
-            variant="body2" 
-            color="text.primary"
-            maxWidth={275}
-            >
-        {subtitle}
-            </Typography>
+          <Typography
+          align= "center">
+            <h1>{title}</h1>
+            <h4>{subtitle}</h4>
+          </Typography>
+
             </Grid>
             </Grid>
             </>
